@@ -24,7 +24,7 @@ public class MNISTWithDL4J {
     DataSetIterator test = new MnistDataSetIterator(100, 10000, true);
         
     MultiLayerConfiguration configuration = new NeuralNetConfiguration.Builder()
-    		  .updater (new Nesterovs (0.0015, 0.98))
+    		  .updater(new Nesterovs (0.0015, 0.98))
     		  .weightInit(WeightInit.XAVIER)
     		  .list()
     		  .layer(0, new DenseLayer.Builder()
@@ -39,9 +39,9 @@ public class MNISTWithDL4J {
     		    .build())
     		  .build();
     		    
-    		MultiLayerNetwork model = new MultiLayerNetwork(configuration);
-    		model.init();
-    		model.fit(train, 15);
+    MultiLayerNetwork model = new MultiLayerNetwork(configuration);
+    model.init();
+    model.fit(train, 15);
     
    // evaluation
     Evaluation eval = new Evaluation(10);
