@@ -5,6 +5,6 @@ This is based upon the blog entry [here](https://medium.com/mlearning-ai/deeplea
 Run with:
 
 ```bash
-    mvn exec:java -Dexec.mainClass="name.mjw.dl4j.MNISTWithDL4J"
+    mvn package exec:java -Dexec.mainClass="name.mjw.dl4j.MNISTWithDL4J"
 ```
 
