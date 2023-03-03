@@ -8,5 +8,5 @@ Run with:
     mvn package exec:java -Dexec.mainClass="name.mjw.dl4j.MNISTWithDL4J"
 ```
 
-Interesting discussion on the evolution on models on this dataset [here](http://karpathy.github.io/2022/03/14/lecun1989/).
+Interesting discussion on the evolution of models on this dataset [here](http://karpathy.github.io/2022/03/14/lecun1989/).
 
